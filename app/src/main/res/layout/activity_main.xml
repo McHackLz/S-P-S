@@ -26,5 +26,5 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/button"
-        android:onClick="enter (MainActivity)" />
+        android:onClick="enter" />
 </RelativeLayout>

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 
 public class MainActivity extends Activity {
 
@@ -14,6 +15,7 @@ public class MainActivity extends Activity {
     }
 
     public void enter(View v){
-        startActivity(new Intent(this, GameActivity.class));
+        if(((CheckBox)findViewById(R.id.idiot_check)).isChecked())
+            startActivity(new Intent(this, GameActivity.class));
     }
 }
